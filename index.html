@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Darina Mikhalina — Business · Events · Experience</title>
+
+    <meta name="description" content="Business and event management portfolio of Darina Mikhalina — live events, inclusive cultural projects and research-based case studies.">
+    <meta name="author" content="Darina Mikhalina">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#711a32">
+
+    <link rel="canonical" href="https://www.mikhalinadarina.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mikhalinadarina.com/">
+    <meta property="og:title" content="Darina Mikhalina — Business · Events · Experience">
+    <meta property="og:description" content="Business and event management portfolio — live events, inclusive cultural projects and research-based case studies.">
+    <meta property="og:image" content="https://www.mikhalinadarina.com/og-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Darina Mikhalina">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Darina Mikhalina — Business · Events · Experience">
+    <meta name="twitter:description" content="Business and event management portfolio — live events, inclusive cultural projects and research-based case studies.">
+    <meta name="twitter:image" content="https://www.mikhalinadarina.com/og-preview.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#711a32">
+    <meta name="msapplication-config" content="none">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #f5f5f5;
+            --ink: #1c1918;
+            --muted: #756e69;
+            --line: #dbd3ce;
+            --wine: #711a32;
+            --max: 1340px;
+            --beige: #e0d8d2;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.45;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        a { color: inherit; text-decoration: none; transition: 0.2s; }
+        ::selection { background: var(--wine); color: #fff; }
+        img, video { max-width: 100%; height: auto; display: block; }
+
+        .wrap { width: 90%; max-width: var(--max); margin: 0 auto; }
+
+        /* NAVIGATION */
+        .nav {
+            position: fixed; z-index: 50; top: 0; left: 0; right: 0;
+            padding: 12px 0;
+            background: rgba(245, 245, 245, 0.92);
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .navin { display: flex; justify-content: space-between; align-items: center; }
+        .logo {
+            font-family: 'Reenie Beanie', cursive; font-size: 38px;
+            color: var(--wine); line-height: 1; text-decoration: none; font-weight: bold;
+            margin-right: 12px; transition: color 0.2s ease, transform 0.2s ease;
+        }
+        .logo:hover { color: #591326; transform: scale(1.05); }
+        .nav-center { display: flex; align-items: center; gap: 18px; }
+        .nav-social { display: flex; align-items: center; gap: 8px; }
+        .nav-social a {
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0.7; transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .nav-social a:hover { opacity: 1; transform: scale(1.1); }
+        .nav-social svg { display: block; width: 26px; height: 26px; }
+        .nav-social svg rect { fill: transparent; }
+        .nav-divider { width: 1px; height: 28px; background: var(--line); flex-shrink: 0; }
+        .links { display: flex; gap: 25px; align-items: center; }
+        .links a {
+            font-size: 13px; text-transform: uppercase; font-weight: 600;
+            letter-spacing: 0.05em; color: var(--ink); transition: color 0.2s ease;
+        }
+        .links a:hover { color: var(--wine); }
+        .hamburger {
+            display: none; font-size: 28px; cursor: pointer;
+            color: var(--wine); user-select: none;
+        }
+        @media(max-width:900px) {
+            .hamburger { display: block; }
+            .links {
+                display: none; position: absolute; top: 70px; right: 5%;
+                width: 240px; background: #fff; flex-direction: column;
+                padding: 22px 20px 16px; border-radius: 8px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                gap: 14px; border: 1px solid var(--line);
+            }
+            .links.active { display: flex; }
+            .links .nav-social-mobile {
+                display: flex; gap: 12px; margin-top: 12px; padding-top: 14px;
+                border-top: 1px solid var(--line); justify-content: center;
+            }
+            .links .nav-social-mobile svg { width: 28px; height: 28px; }
+            .links .nav-social-mobile svg rect { fill: transparent; }
+            .nav-social { display: none; }
+            .nav-divider { display: none; }
+        }
+        @media(min-width:901px) { .links .nav-social-mobile { display: none; } }
+
+        .script-accent {
+            font-family: 'Reenie Beanie', cursive;
+            font-style: italic; font-weight: 700;
+        }
+
+        /* HERO */
+        .hero { padding: 140px 0 50px; }
+        .heroGrid { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+        .heroLeft { flex: 1 1 auto; }
+        .eyebrow {
+            font-size: 14px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.1em; color: var(--ink);
+            margin-bottom: 25px; border-left: 5px solid var(--wine); padding-left: 12px;
+        }
+        h1 {
+            font-size: clamp(48px, 7vw, 110px); line-height: 0.9;
+            letter-spacing: -0.04em; font-weight: 700; margin: 0;
+        }
+        .cursive-role {
+            font-family: 'Reenie Beanie', cursive;
+            font-size: clamp(35px, 4vw, 48px); color: var(--wine);
+            font-weight: bold; line-height: 0.9; margin: 15px 0 25px 0;
+        }
+        .heroCopy { max-width: 500px; }
+        .heroCopy p { font-size: 17px; color: #57514e; margin: 0; line-height: 1.5; }
+
+        .heroRight {
+            flex: 0 0 auto; display: flex; justify-content: flex-end;
+            position: relative; padding-top: 85px; padding-right: 15px;
+        }
+        .pig-var2 {
+            position: absolute; top: 0; right: -8px;
+            display: flex; align-items: center; gap: 8px; z-index: 10;
+        }
+        .pig-var2 img {
+            width: 90px;
+            transform: rotate(+3deg) scale(1.111);
+            transform-origin: bottom center;
+        }
+        .pig-var2 span {
+            font-family: 'Reenie Beanie', cursive; font-size: 28px;
+            color: var(--wine); white-space: nowrap; transform: translateX(-20px);
+        }
+        .portrait-container {
+            position: relative; width: 420px; height: 420px;
+            background: #fff; padding: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+            flex-shrink: 0;
+        }
+        .portrait-photo {
+            width: 100%; height: 100%; object-fit: cover;
+            display: block; background: #e0d8d2;
+        }
+        .portrait-corner {
+            position: absolute; top: -8px; right: -8px;
+            width: 60px; height: 60px;
+            border-top: 6px solid var(--wine); border-right: 6px solid var(--wine);
+            z-index: 5;
+        }
+        @media(max-width:900px) {
+            .heroGrid { flex-direction: column; text-align: left; }
+            .heroRight { justify-content: center; width: 100%; }
+            .portrait-container {
+                width: 100%; max-width: 420px;
+                height: auto; aspect-ratio: 1/1;
+            }
+            .pig-var2 { right: auto; left: 50%; transform: translateX(-50%); }
+        }
+
+        /* METRICS BANNER */
+        .metrics-banner {
+            background: #ffffff; border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line); padding: 20px 0; margin: 0 0 20px 0;
+        }
+        .metrics-grid {
+            display: grid; grid-template-columns: repeat(5, 1fr);
+            gap: 0; text-align: center;
+            width: 90%; max-width: var(--max); margin: 0 auto;
+        }
+        .metric-item {
+            padding: 8px 12px; border-right: 1px solid var(--line);
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        .metric-item:last-child { border-right: none; }
+        .metric-val {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(24px, 3vw, 36px); font-weight: 700;
+            color: var(--wine); line-height: 1.1; letter-spacing: -0.02em;
+        }
+        .metric-lbl {
+            font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--muted); font-weight: 600; margin-top: 2px;
+        }
+        @media(max-width:900px) {
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); gap: 16px 0; }
+            .metric-item {
+                border-right: none; border-bottom: 1px solid var(--line); padding: 12px 0;
+            }
+            .metric-item:nth-child(odd) { border-right: 1px solid var(--line); }
+            .metric-item:nth-child(5) {
+                grid-column: span 2; border-bottom: none; border-right: none;
+            }
+            .metric-item:nth-child(4) { border-bottom: none; }
+        }
+
+        /* SHARED SECTION STYLES */
+        section { padding: 35px 0; }
+        .head { margin-bottom: 30px; position: relative; }
+        .num {
+            font-size: 14px; font-weight: 600; color: var(--ink);
+            letter-spacing: 0.1em; text-transform: uppercase;
+            margin-bottom: 15px; border-left: 5px solid var(--wine); padding-left: 12px;
+        }
+        .num-no-line {
+            font-size: 14px; font-weight: 600; color: var(--ink);
+            letter-spacing: 0.1em; text-transform: uppercase;
+            margin-bottom: 15px; padding-left: 0; border-left: none;
+        }
+        .title {
+            font-size: clamp(32px, 5vw, 56px); line-height: 1.05;
+            letter-spacing: -0.03em; margin: 0; font-weight: 700;
+        }
+        .pig-learn {
+            position: absolute; right: 0; bottom: 0;
+            width: 90px; height: auto; z-index: 10;
+        }
+
+        /* 01 ABOUT */
+        .about {
+            display: grid; grid-template-columns: 1fr 1.5fr;
+            gap: 30px; border-top: 1px solid var(--line); padding-top: 30px;
+        }
+        .lead {
+            font-size: clamp(24px, 3vw, 36px); line-height: 1.2;
+            letter-spacing: -0.02em; margin: 0; font-weight: 500;
+        }
+        .lead .highlight { color: var(--wine); font-weight: 600; }
+        .aboutText { font-size: 17px; color: #57514e; }
+        .aboutText p { margin: 0 0 20px; }
+        .subtle-highlight {
+            background: rgba(113, 26, 50, 0.05);
+            padding: 15px 20px; border-radius: 8px;
+            color: var(--ink); font-weight: 500;
+            display: inline-block; margin-top: 10px;
+            border-left: 3px solid var(--wine);
+        }
+
+        /* 02 SELECTED WORK */
+        .case {
+            border-top: 1px solid var(--line);
+            padding-top: 35px; margin-bottom: 40px;
+        }
+        .roleline {
+            font-size: 11px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.1em; color: var(--muted); margin: 0 0 12px;
+        }
+        .case-header { margin-bottom: 20px; position: relative; z-index: 3; }
+        .case-title {
+            font-size: clamp(28px, 4vw, 40px); line-height: 1.1;
+            letter-spacing: -0.02em; margin: 0; font-weight: 700; color: var(--ink);
+        }
+        .case-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 35px; align-items: end;
+            position: relative; z-index: 3; margin-bottom: 25px;
+        }
+        .text-col p {
+            margin: 0; font-size: 16px; color: #57514e; line-height: 1.6;
+        }
+        .wm-right-box { position: relative; }
+        .wm-bg-num {
+            position: absolute; font-family: 'Inter', sans-serif; font-weight: 900;
+            font-size: 180px; color: rgba(113, 26, 50, 0.06);
+            line-height: 0.75; bottom: -10px; right: 0;
+            pointer-events: none; user-select: none; z-index: 1;
+        }
+        .grid-v7-inline {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+            position: relative; z-index: 2;
+        }
+        .item-v7-inline {
+            border-bottom: 2px solid var(--wine); padding-bottom: 8px;
+        }
+        .item-v7-inline .hdr-v7 { font-size: 18px; font-weight: 900; color: var(--wine); }
+        .item-v7-inline .desc-v7 { font-size: 12.5px; color: var(--muted); }
+        .btn-fullwidth {
+            display: block; width: 100%; text-align: center;
+            padding: 10px 20px; background-color: var(--wine); color: #fff;
+            font-size: 12px; text-transform: uppercase; font-weight: 600;
+            letter-spacing: 0.1em; border-radius: 4px; border: none;
+            cursor: pointer; text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+            position: relative; z-index: 3; margin: 25px 0;
+            box-shadow: 0 2px 8px rgba(113, 26, 50, 0.15);
+        }
+        .btn-fullwidth:hover {
+            background-color: #591326; transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(113, 26, 50, 0.3);
+        }
+        .btn-fullwidth:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 5px rgba(113, 26, 50, 0.3);
+        }
+
+        .result-plate {
+            display: block; width: 100%; text-align: center;
+            padding: 14px 20px; background: var(--beige); color: var(--wine);
+            font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
+            border-radius: 4px; border: none;
+            position: relative; z-index: 3; margin: 25px 0;
+            line-height: 1.4; text-transform: uppercase;
+        }
+
+        .mediaGrid {
+            display: grid; grid-template-columns: 1.45fr 0.75fr 0.75fr;
+            gap: 12px; margin-top: 35px;
+        }
+        .tile {
+            background: #e0d8d2; border-radius: 8px;
+            min-height: 220px; position: relative; overflow: hidden; cursor: pointer;
+        }
+        .tile img, .tile video {
+            width: 100%; height: 100%; object-fit: cover; display: block;
+            position: absolute; inset: 0; pointer-events: none;
+            transition: transform 0.4s;
+        }
+        .tile:hover img, .tile:hover video { transform: scale(1.03); }
+        .tile.tall { min-height: 450px; grid-row: span 2; }
+        .tile.wide { grid-column: span 2; }
+        .play-duration {
+            position: absolute; bottom: 12px; right: 12px;
+            background: var(--wine); color: #fff;
+            padding: 4px 12px 4px 10px; border-radius: 20px;
+            display: flex; align-items: center; gap: 6px;
+            font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+            z-index: 2; backdrop-filter: blur(2px);
+            pointer-events: none; font-variant-numeric: tabular-nums;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .play-duration .duration-text { line-height: 1; }
+        .play-duration svg {
+            display: block; width: 14px; height: 14px;
+            fill: #fff; flex-shrink: 0;
+        }
+
+        @media(max-width:900px) {
+            .case-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+            .grid-v7-inline { grid-template-columns: 1fr !important; }
+            .mediaGrid { grid-template-columns: 1fr 1fr !important; }
+        }
+        @media(max-width:600px) {
+            .mediaGrid { grid-template-columns: 1fr !important; }
+            .tile.tall { min-height: 280px; grid-row: span 1; }
+            .wm-bg-num { font-size: 100px !important; }
+        }
+
+        /* 03 FOUNDATION */
+        .foundation {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 15px; border-top: 1px solid var(--line); padding-top: 30px;
+        }
+        .card {
+            background: #fff; border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 12px; padding: 25px; min-height: 200px;
+            display: flex; flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+        }
+        .card-highlight {
+            background: rgba(113, 26, 50, 0.08);
+            border: 1px solid rgba(113, 26, 50, 0.15);
+            color: var(--ink);
+        }
+        .card-highlight small { color: var(--wine); }
+        .card-highlight .gpa { color: var(--wine); }
+        .card-highlight ul { color: #57514e; }
+        .card-highlight .link-doc { color: var(--wine); }
+        .card small {
+            font-size: 11px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.1em; color: var(--wine);
+        }
+        .card h3, .card .gpa {
+            font-size: 22px; line-height: 1.1; margin: 12px 0;
+            font-weight: 700; color: var(--ink);
+        }
+        .card ul {
+            padding-left: 20px; margin: 10px 0 0;
+            color: #57514e; font-size: 14px;
+        }
+        .card ul li { margin-bottom: 6px; }
+        .proof {
+            margin-top: auto; padding-top: 18px;
+            display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+        }
+        .link-doc {
+            font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em;
+            color: var(--wine); font-weight: 700;
+            display: inline-flex; align-items: center; gap: 6px;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        .link-doc:hover {
+            color: #591326; transform: scale(1.03); text-decoration: none;
+        }
+        .link-inline {
+            font-weight: 700; color: var(--wine); text-decoration: none;
+            transition: transform 0.2s ease, color 0.2s ease;
+            display: inline-block;
+        }
+        .link-inline:hover { transform: scale(1.03); color: #591326; }
+
+        .experience-block { margin-top: 35px; }
+        .experience-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 25px; margin-bottom: 10px;
+        }
+        .experience-col { border-left: 3px solid var(--wine); padding-left: 20px; }
+        .experience-col p {
+            font-size: 15px; color: #57514e; line-height: 1.6; margin: 0;
+        }
+        .experience-col p+p { margin-top: 12px; }
+
+        .research-card-content {
+            display: flex; flex-direction: column;
+            gap: 18px; flex: 1; margin-top: 0;
+        }
+        .research-card-item {
+            border-bottom: 1px solid var(--line); padding-bottom: 16px;
+        }
+        .research-card-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .research-card-item h3 {
+            font-size: 22px; line-height: 1.1; margin: 0 0 6px;
+            font-weight: 700; color: var(--ink);
+        }
+        .research-card-item p {
+            font-size: 14px; color: #57514e; margin: 0 0 8px; line-height: 1.5;
+        }
+        .research-card-item .link-doc { font-size: 11px; }
+        .research-card-item:first-child { margin-top: 12px; }
+
+        @media(max-width:900px) {
+            .foundation { grid-template-columns: 1fr; }
+            .experience-grid { grid-template-columns: 1fr; gap: 16px; }
+            .experience-col {
+                border-left: 3px solid var(--wine); padding-left: 16px;
+            }
+        }
+
+        /* 04 APPROACH */
+        .thinking-wrap { padding: 35px 0; }
+        .thinking {
+            background: var(--beige); color: var(--ink);
+            border-radius: 12px; padding: 40px 5%;
+            margin: 0 -5%; width: auto;
+        }
+        .thinking .num { border-color: var(--wine); }
+        .thinking h2 {
+            font-size: clamp(28px, 4vw, 42px); font-weight: 700; margin: 0 0 15px;
+        }
+        .principles {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 20px; position: relative;
+        }
+        .principle {
+            background: #fff; padding: 25px;
+            border-top: 3px solid var(--wine); border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative; overflow: hidden;
+        }
+        .principle:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(113, 26, 50, 0.12);
+        }
+        .principle .script-label {
+            font-family: 'Reenie Beanie', cursive;
+            font-size: 32px; color: var(--wine);
+            display: block; margin-bottom: 8px; line-height: 1; font-weight: 700;
+        }
+        .principle p {
+            font-size: 14px; color: #57514e; margin: 0; line-height: 1.5;
+        }
+        .principle-watermark {
+            position: absolute; font-family: 'Inter', sans-serif; font-weight: 900;
+            font-size: 150px; color: rgba(113, 26, 50, 0.05);
+            line-height: 0.75; bottom: -10px; right: 0;
+            pointer-events: none; user-select: none; z-index: 0;
+        }
+
+        /* 05 ARCHIVE */
+        .gallery-section { padding-top: 35px; border-top: 1px solid var(--line); }
+        .tabs {
+            display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;
+        }
+        .tab-btn {
+            background: #e0d8d2; border: none;
+            padding: 10px 20px; border-radius: 30px;
+            font-size: 12px; font-weight: 600; color: #57514e;
+            cursor: pointer; transition: 0.3s;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+        .tab-btn.active, .tab-btn:hover { background: var(--wine); color: #fff; }
+        .carousel-container { display: none; }
+        .carousel-container.active { display: block; }
+        .carousel-track {
+            display: flex; gap: 15px; overflow-x: auto;
+            scroll-snap-type: x mandatory; padding-bottom: 15px;
+            scrollbar-width: thin; scrollbar-color: var(--wine) #e0d8d2;
+            align-items: flex-start;
+        }
+        .carousel-track::-webkit-scrollbar { height: 8px; }
+        .carousel-track::-webkit-scrollbar-track {
+            background: #e0d8d2; border-radius: 4px;
+        }
+        .carousel-track::-webkit-scrollbar-thumb {
+            background-color: var(--wine); border-radius: 4px;
+        }
+        .carousel-item {
+            flex: 0 0 auto; border-radius: 8px; overflow: hidden;
+            position: relative; cursor: pointer; scroll-snap-align: start;
+            background: #e0d8d2; display: flex; align-items: center; justify-content: center;
+            height: 280px; min-width: 60px; max-width: 560px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .carousel-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); z-index: 2;
+        }
+        .carousel-item img {
+            height: 100%; width: auto; object-fit: contain; display: block;
+            max-width: 100%; transition: transform 0.3s ease; background: #e0d8d2;
+        }
+        .carousel-item:hover img { transform: scale(1.03); }
+        .carousel-desc { margin-bottom: 15px; font-size: 15px; color: #57514e; }
+        @media(max-width:900px) {
+            .carousel-item { height: 200px; min-width: 40px; max-width: 400px; }
+        }
+        @media(max-width:600px) {
+            .carousel-item { height: 150px; min-width: 30px; max-width: 300px; }
+            .carousel-desc { font-size: 13px; }
+        }
+
+        /* MODAL */
+        .modal {
+            display: none; position: fixed; inset: 0;
+            background: rgba(0, 0, 0, 0.92); z-index: 100;
+            align-items: center; justify-content: center; padding: 20px;
+        }
+        .modal.active { display: flex; }
+        .modal-content { max-width: 90%; max-height: 90vh; position: relative; }
+        .modal-content img, .modal-content video {
+            max-width: 100%; max-height: 90vh; border-radius: 6px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); display: none;
+        }
+        .modal-close {
+            position: absolute; top: 20px; right: 30px; color: #fff;
+            font-size: 45px; cursor: pointer; z-index: 101; line-height: 1;
+        }
+
+        /* 06 CONTACT */
+        .contact-section {
+            padding: 35px 0 20px; border-top: 1px solid var(--line); margin-top: 10px;
+        }
+        .contact-top {
+            display: flex; flex-direction: column;
+            margin-bottom: 30px; position: relative;
+        }
+        .contact-top .num { margin-bottom: 15px; }
+        .contactTitle {
+            font-size: clamp(40px, 6vw, 85px); font-weight: 700;
+            line-height: 0.95; letter-spacing: -0.04em; margin: 0;
+        }
+        .contactTitle span { color: var(--wine); }
+        .pig-stand {
+            position: absolute; right: 0; bottom: 0;
+            width: 90px; height: auto; z-index: 10;
+        }
+        .contact-banner {
+            background: #ffffff; border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            padding: 18px 0; margin: 10px 0 30px; width: 100%;
+        }
+        .contact-row {
+            display: flex; align-items: center; justify-content: space-between;
+            flex-wrap: wrap; gap: 16px 20px;
+            width: 90%; max-width: var(--max); margin: 0 auto;
+        }
+        .contact-email {
+            font-size: 14px; font-weight: 600; letter-spacing: 0.04em;
+            color: var(--muted); text-transform: uppercase;
+            font-family: 'Inter', sans-serif; flex: 0 1 auto;
+        }
+        .contact-email a { color: var(--muted); }
+        .contact-email a:hover { color: var(--wine); }
+        .contact-divider { width: 1px; height: 30px; background: var(--line); flex-shrink: 0; }
+        .contact-icons {
+            display: flex; align-items: center; gap: 6px;
+            flex: 1 1 auto; justify-content: center;
+        }
+        .contact-icons a {
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0.7; transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .contact-icons a:hover { opacity: 1; transform: scale(1.1); }
+        .contact-icons svg { display: block; width: 32px; height: 32px; }
+        .contact-icons svg rect { fill: transparent; }
+        .contact-btn-wrap {
+            display: flex; align-items: center; gap: 10px; flex: 0 1 auto;
+        }
+        .btn-download {
+            display: inline-block; padding: 10px 24px;
+            background-color: var(--wine); color: #fff;
+            font-size: 12px; text-transform: uppercase; font-weight: 600;
+            letter-spacing: 0.1em; border-radius: 4px; border: none;
+            cursor: pointer;
+            transition: background-color 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+            text-align: center; white-space: nowrap;
+        }
+        .btn-download:hover {
+            background-color: #591326; transform: scale(0.97);
+            box-shadow: 0 4px 12px rgba(113, 26, 50, 0.25);
+        }
+        .contact-footer {
+            text-align: center; padding-top: 20px; margin-top: 20px;
+            border-top: 1px solid var(--line);
+            font-size: 13px; font-weight: 500; color: var(--muted);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px) {
+            .heroGrid { flex-direction: column; text-align: left; }
+            .heroRight { justify-content: center; width: 100%; }
+            .portrait-container {
+                width: 100%; max-width: 420px;
+                height: auto; aspect-ratio: 1/1;
+            }
+            .about, .foundation { grid-template-columns: 1fr; gap: 30px; }
+            .mediaGrid { grid-template-columns: 1fr 1fr; }
+            .tile.wide { grid-column: span 2; }
+            .principles { grid-template-columns: 1fr; }
+            .contact-row { flex-wrap: wrap; justify-content: center; }
+            .contact-divider { display: none; }
+            .contact-icons { flex: 0 1 auto; gap: 10px; }
+            .contact-btn-wrap { width: 100%; justify-content: center; margin-top: 4px; }
+            .thinking { padding: 28px 5%; margin: 0 -5%; border-radius: 0; }
+            .principles { gap: 16px; }
+            .principle { padding: 20px 18px; }
+            .heroCopy { max-width: 100%; }
+            .cursive-role { max-width: 100%; }
+            .contact-email { font-size: 13px; }
+            .contact-icons svg { width: 28px; height: 28px; }
+            .principle-watermark { font-size: 140px; }
+            .experience-col { padding-left: 16px; }
+        }
+        @media(max-width:600px) {
+            .metrics-grid { grid-template-columns: 1fr 1fr; gap: 10px 0; }
+            .metric-item {
+                border-right: none; border-bottom: 1px solid var(--line); padding: 10px 0;
+            }
+            .metric-item:nth-child(odd) { border-right: 1px solid var(--line); }
+            .metric-item:nth-child(5) {
+                grid-column: span 2; border-bottom: none; border-right: none;
+            }
+            .metric-item:nth-child(4) { border-bottom: none; }
+            .portrait-container { max-width: 300px; }
+            .contact-row { flex-direction: column; align-items: center; gap: 12px; }
+            .contact-icons { gap: 12px; }
+            .contact-email { font-size: 13px; }
+            .contact-btn-wrap { width: 100%; }
+            .btn-download { width: 100%; text-align: center; }
+            .thinking { padding: 24px 5%; margin: 0 -5%; border-radius: 0; }
+            .principle-watermark { font-size: 120px; }
+            .pig-stand { right: 5%; }
+            .experience-grid { grid-template-columns: 1fr; gap: 14px; }
+            .experience-col {
+                border-left: 3px solid var(--wine); padding-left: 14px;
+            }
+            .research-card-item h3 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="nav">
+        <div class="wrap navin">
+            <div class="nav-center">
+                <a class="logo" href="#top">DM</a>
+                <span class="nav-divider"></span>
+                <div class="nav-social">
+                    <a href="mailto:mikhalinadarina@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M40 12H8C5.8 12 4 13.8 4 16V32C4 34.2 5.8 36 8 36H40C42.2 36 44 34.2 44 32V16C44 13.8 42.2 12 40 12ZM40 16L24 26L8 16H40ZM40 32H8V19L24 29L40 19V32Z" fill="#711a32"/></svg></a>
+                    <a href="https://instagram.com/darchinix" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><rect x="8" y="8" width="32" height="32" rx="9" fill="none" stroke="#711a32" stroke-width="3.5"/><circle cx="24" cy="24" r="7" fill="none" stroke="#711a32" stroke-width="3.5"/><circle cx="32.5" cy="15.5" r="2" fill="#711a32"/></svg></a>
+                    <a href="https://t.me/darchinix" target="_blank" rel="noopener" aria-label="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M38.8 11.2L7.6 23.2C5.5 24 5.5 25.2 7.2 25.7L15.2 28.2L33.7 16.5C34.6 15.9 35.4 16.2 34.7 16.8L19.7 30.3H19.6L19.7 30.4L19.1 38.5C20.3 38.5 20.8 38 21.5 37.3L27.3 31.7L33.3 36.1C34.4 36.7 35.2 36.4 35.5 35.1L39.9 14.3C40.3 12.6 39.3 11.8 38.8 11.2Z" fill="#711a32"/></svg></a>
+                    <a href="https://vk.com/darchinix" target="_blank" rel="noopener" aria-label="VK"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M25.08 37c-11.45 0-17.98-7.86-18.26-20.94h5.73c.19 9.58 4.41 13.64 7.76 14.48V16.06h5.39v8.27c3.3-.35 6.78-4.12 7.95-8.27h5.39c-.9 5.09-4.66 8.86-7.34 10.42 2.68 1.26 6.89 4.6 8.35 10.52h-5.93c-1.14-3.56-3.98-6.31-7.76-6.68V37z" fill="#711a32"/></svg></a>
+                </div>
+            </div>
+            <div class="hamburger" id="mobileToggle">☰</div>
+            <nav class="links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#foundation">Foundation</a>
+                <a href="#approach">Approach</a>
+                <a href="#archive">Archive</a>
+                <a href="#contact">Contact</a>
+                <div class="nav-social-mobile">
+                    <a href="mailto:mikhalinadarina@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M40 12H8C5.8 12 4 13.8 4 16V32C4 34.2 5.8 36 8 36H40C42.2 36 44 34.2 44 32V16C44 13.8 42.2 12 40 12ZM40 16L24 26L8 16H40ZM40 32H8V19L24 29L40 19V32Z" fill="#711a32"/></svg></a>
+                    <a href="https://instagram.com/darchinix" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><rect x="8" y="8" width="32" height="32" rx="9" fill="none" stroke="#711a32" stroke-width="3.5"/><circle cx="24" cy="24" r="7" fill="none" stroke="#711a32" stroke-width="3.5"/><circle cx="32.5" cy="15.5" r="2" fill="#711a32"/></svg></a>
+                    <a href="https://t.me/darchinix" target="_blank" rel="noopener" aria-label="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M38.8 11.2L7.6 23.2C5.5 24 5.5 25.2 7.2 25.7L15.2 28.2L33.7 16.5C34.6 15.9 35.4 16.2 34.7 16.8L19.7 30.3H19.6L19.7 30.4L19.1 38.5C20.3 38.5 20.8 38 21.5 37.3L27.3 31.7L33.3 36.1C34.4 36.7 35.2 36.4 35.5 35.1L39.9 14.3C40.3 12.6 39.3 11.8 38.8 11.2Z" fill="#711a32"/></svg></a>
+                    <a href="https://vk.com/darchinix" target="_blank" rel="noopener" aria-label="VK"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M25.08 37c-11.45 0-17.98-7.86-18.26-20.94h5.73c.19 9.58 4.41 13.64 7.76 14.48V16.06h5.39v8.27c3.3-.35 6.78-4.12 7.95-8.27h5.39c-.9 5.09-4.66 8.86-7.34 10.42 2.68 1.26 6.89 4.6 8.35 10.52h-5.93c-1.14-3.56-3.98-6.31-7.76-6.68V37z" fill="#711a32"/></svg></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <section class="hero wrap">
+            <div class="heroGrid">
+                <div class="heroLeft">
+                    <div class="eyebrow">Portfolio · 2026</div>
+                    <h1>Darina<br>Mikhalina</h1>
+                    <div class="cursive-role">Business · Events · Experience</div>
+                    <div class="heroCopy">
+                        <p>Building the operational and strategic foundation for cultural projects and professional formats.</p>
+                    </div>
+                </div>
+
+                <div class="heroRight">
+                    <div class="pig-var2">
+                        <span class="script-accent">My pigs have grown wings</span>
+                        <img src="pig.png" alt="Illustration of a flying pig with wings" width="90" height="90">
+                    </div>
+
+                    <div class="portrait-container">
+                        <div class="portrait-corner"></div>
+                        <img src="portret.jpg" alt="Portrait of Darina Mikhalina" class="portrait-photo" width="420" height="420">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METRICS BANNER -->
+        <div class="metrics-banner">
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <div class="metric-val">5.0 / 5.0</div>
+                    <div class="metric-lbl">Academic GPA</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-val">15+ Mo.</div>
+                    <div class="metric-lbl">Professional Experience</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-val">10+ Yrs.</div>
+                    <div class="metric-lbl">Performing Arts</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-val">60,000</div>
+                    <div class="metric-lbl">Peak Audience Reach</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-val">200+</div>
+                    <div class="metric-lbl">Events &amp; Projects</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section id="about" class="wrap">
+            <div class="head">
+                <div class="num">01 / About</div>
+                <h2 class="title">From the stage<br>to strategy.</h2>
+            </div>
+            <div class="about">
+                <p class="lead">More than ten years inside performing arts taught me to see <span class="highlight">the live experience from both sides.</span></p>
+                <div class="aboutText">
+                    <p>Transitioning from performer to organizer, I help coordinate school productions and larger public events, build tools to simplify complex processes, and study the practical mechanics of the creative industries. Experience with social theatre, community initiatives and interactive formats shaped my focus on making cultural and professional events more accessible and better structured.</p>
+                    <div class="subtle-highlight">My background is in creation and coordination. Now I need to learn how to manage organizations, resources, markets and growth, and apply that foundation to events and live experiences.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK -->
+        <section id="work" class="wrap">
+            <div class="head">
+                <div class="num">02 / Selected Work</div>
+                <h2 class="title">Many projects.<br>One direction.</h2>
+            </div>
+
+            <!-- Case 01 — JobSPB -->
+            <article class="case" id="work-jobspb">
+                <div class="case-header">
+                    <p class="roleline">Founder &amp; Project Lead · Digital Service &amp; Research</p>
+                    <h3 class="case-title">JobSPB<br>Youth employment service</h3>
+                </div>
+                <div class="case-grid">
+                    <div class="text-col">
+                        <p>Designed and launched a digital service translating complex legal and bureaucratic hiring procedures into actionable, structured guidance for teenagers. Grounded in a two-stage empirical study (55-respondent baseline assessment and 103-respondent post-use evaluation), the project addresses young job seekers' specific information gaps through a targeted <a href="https://jobspb.tilda.ws/" target="_blank" rel="noopener" class="link-inline">digital platform</a> and a <a href="#" onclick="openMedia('media/jobspb_videoguide.mp4','video'); return false;" class="link-inline">multimedia video guide</a>, demonstrating end-to-end product execution.</p>
+                    </div>
+                    <div class="wm-right-box">
+                        <div class="wm-bg-num">01</div>
+                        <div class="grid-v7-inline">
+                            <div class="item-v7-inline"><div class="hdr-v7">91.3% User clarity</div><div class="desc-v7">hiring rules became clear and easy to follow, earning 4.32 / 5 usability</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">48.5% Action rate</div><div class="desc-v7">prompted users to start job searches, send applications, or get hired</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">78.7% Real help</div><div class="desc-v7">helped teenagers overcome bureaucratic barriers with confidence</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Product logic</div><div class="desc-v7">research → user needs → service design → implementation → measurement</div></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="media/jobspb_project.pdf" target="_blank" rel="noopener" class="btn-fullwidth">View Project · PDF</a>
+                <div class="mediaGrid">
+                    <div class="tile tall" onclick="openMedia('media/jobspb_diagram.JPG','image')">
+                        <img src="media/jobspb_diagram.JPG" alt="JobSPB research diagram and user survey analytics" loading="lazy">
+                    </div>
+                    <div class="tile" onclick="openMedia('media/Jobspb_hypothesis.jpg','image')">
+                        <img src="media/Jobspb_hypothesis.jpg" alt="JobSPB project hypothesis and testing workflow" loading="lazy">
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/jobspb_videoguide.mp4','video')">
+                        <video src="media/jobspb_videoguide_preview.mp4" aria-label="Preview video of JobSPB multimedia youth guide" autoplay loop muted playsinline preload="metadata" poster="media/jobspb_videoguide_preview.mp4"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">02:55</span></div>
+                    </div>
+                    <div class="tile" onclick="openMedia('media/jobspb_urok.jpg','image')">
+                        <img src="media/jobspb_urok.jpg" alt="Educational lesson and presentation slide for JobSPB youth guide" loading="lazy">
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/jobspb_presentation.mp4','video')">
+                        <video src="media/jobspb_presentation_preview.mp4" aria-label="Preview video of JobSPB project presentation" autoplay loop muted playsinline preload="metadata" poster="media/jobspb_presentation_preview.mp4"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:25</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Case 02 — SPB IEF -->
+            <article class="case" id="work-spb-ief">
+                <div class="case-header">
+                    <p class="roleline">Program Development &amp; Operations · Educational &amp; Cultural Event</p>
+                    <h3 class="case-title">SPB IEF<br>Venue operations &amp; visitor experience</h3>
+                </div>
+                <div class="case-grid">
+                    <div class="text-col">
+                        <p>My work at the Saint Petersburg International Educational Forum ranged from creating an original dance film in 2024 to leading concept development, program structure, and operational coordination for a major school-led section in 2026. This project served as a practical case in resource coordination, visitor flow management, and scalable event execution.</p>
+                    </div>
+                    <div class="wm-right-box">
+                        <div class="wm-bg-num">02</div>
+                        <div class="grid-v7-inline">
+                            <div class="item-v7-inline"><div class="hdr-v7">Program development</div><div class="desc-v7">structured a repeatable, engaging format for successive visitor groups</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">200+ guests</div><div class="desc-v7">end-to-end visitor coordination and venue logistics</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Stakeholder alignment</div><div class="desc-v7">managed teams, schedules, and interactive engagement loops</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Operational efficiency</div><div class="desc-v7">outperformed traditional delivery models through interactive design</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-plate">#1 MOST-VISITED SCHOOL-LED VENUE AT SPB IEF 2026 · SELECTED AS A HOST VENUE FOR THE FOLLOWING EDITION</div>
+                <div class="mediaGrid">
+                    <div class="tile tall has-video" onclick="openMedia('media/dance_film.mp4','video')">
+                        <video src="media/dance_film_preview.mp4" aria-label="Preview of original educational dance film" autoplay loop muted playsinline preload="metadata" poster="media/dance_film_preview.mp4"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">06:53</span></div>
+                    </div>
+                    <div class="tile" onclick="openMedia('media/spbiefktd1.jpg','image')">
+                        <img src="media/spbiefktd1.jpg" alt="Interactive group workshop at Saint Petersburg International Educational Forum" loading="lazy">
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/spbief_ktd.mp4','video')">
+                        <video src="media/spbief_ktd_preview.mp4" aria-label="Preview of interactive event format at SPB IEF" autoplay loop muted playsinline preload="metadata" poster="media/spbief_ktd_preview.mp4"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">00:09</span></div>
+                    </div>
+                    <div class="tile" onclick="openMedia('media/dance_interview.jpg','image')">
+                        <img src="media/dance_interview.jpg" alt="Darina Mikhalina giving an interview about the educational dance film project" loading="lazy">
+                    </div>
+                    <div class="tile" onclick="openMedia('media/spbiefktd2.jpg','image')">
+                        <img src="media/spbiefktd2.jpg" alt="Participants engaged in collaborative activity at SPB IEF venue" loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Case 03 — Large-Scale Live Events -->
+            <article class="case" id="work-large-events">
+                <div class="case-header">
+                    <p class="roleline">Performer &amp; Production Participant · Professional Live Events</p>
+                    <h3 class="case-title">Large-scale live events<br>&amp; broadcast production</h3>
+                </div>
+                <div class="case-grid">
+                    <div class="text-col">
+                        <p>First-hand experience across major arenas and televised productions provided deep operational awareness. Working within high-pressure environments taught me how massive live projects coordinate multiple moving parts under strict timelines.</p>
+                    </div>
+                    <div class="wm-right-box">
+                        <div class="wm-bg-num">03</div>
+                        <div class="grid-v7-inline">
+                            <div class="item-v7-inline"><div class="hdr-v7">60,000 capacity</div><div class="desc-v7">direct exposure to arena-scale live logistics and execution</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Multi-stakeholder environment</div><div class="desc-v7">synchronized crews, artists, technical teams, and security</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Contingency management</div><div class="desc-v7">real-time problem solving and timing in high-pressure settings</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Core takeaway</div><div class="desc-v7">large creative visions succeed only when operational logistics run flawlessly</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mediaGrid">
+                    <div class="tile wide has-video" onclick="openMedia('media/events_flashmob.mp4','video')">
+                        <video src="media/events_flashmob_preview.mp4" aria-label="Preview of large-scale live flashmob performance" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">00:50</span></div>
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/events_arena.mp4','video')">
+                        <video src="media/events_arena_preview.mp4" aria-label="Preview of arena show live broadcast production" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:05</span></div>
+                    </div>
+                    <div class="tile" onclick="openMedia('media/events_zenith.jpg','image')">
+                        <img src="media/events_zenith.jpg" alt="Live choreography performance on stage at Gazprom Arena" loading="lazy">
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/events_bkz.mp4','video')">
+                        <video src="media/events_bkz_preview.mp4" aria-label="Preview of performance at BKZ Oktyabrsky Concert Hall" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:11</span></div>
+                    </div>
+                    <div class="tile" onclick="openMedia('media/events_chorus.jpg','image')">
+                        <img src="media/events_chorus.jpg" alt="Mass choir performance at Rastrelli Square near Smolny Cathedral" loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Case 04 — School Events & Organization -->
+            <article class="case" id="work-school">
+                <div class="case-header">
+                    <p class="roleline">Event Coordination · School Projects</p>
+                    <h3 class="case-title">School events<br>&amp; execution</h3>
+                </div>
+                <div class="case-grid">
+                    <div class="text-col">
+                        <p>Hands-on experience turning ideas into structured programs for different school audiences. I developed scripts and choreography, coordinated participants and rehearsals, and designed interactive formats including demonstration lessons, intellectual quizzes and quest-based tours. Experience as a debate leader and peer mediator strengthened my ability to lead teams and work across different perspectives.</p>
+                    </div>
+                    <div class="wm-right-box">
+                        <div class="wm-bg-num">04</div>
+                        <div class="grid-v7-inline">
+                            <div class="item-v7-inline"><div class="hdr-v7">End-to-end ownership</div><div class="desc-v7">from concept and program design to final delivery</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Team leadership</div><div class="desc-v7">coordinated 15–25 person teams through rehearsals and performance</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Resource management</div><div class="desc-v7">worked within fixed school budgets for costumes, lighting and logistics</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Process improvement</div><div class="desc-v7">refined planning, coordination and audience engagement with each edition</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mediaGrid">
+                    <div class="tile wide" onclick="openMedia('media/productions_mediation.jpg','image')">
+                        <img src="media/productions_mediation.jpg" alt="Peer mediation team presenting at regional competition" loading="lazy">
+                    </div>
+                    <div class="tile" onclick="openMedia('media/productions_debate.jpg','image')">
+                        <img src="media/productions_debate.jpg" alt="Darina speaking as debate leader during school competition" loading="lazy">
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/productions_dance.mp4','video')">
+                        <video src="media/productions_dance_preview.mp4" aria-label="Preview of school choreography and Last Bell waltz staging" autoplay loop muted playsinline preload="metadata" poster="media/productions_dance_preview.mp4"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">03:00</span></div>
+                    </div>
+                    <div class="tile" onclick="openMedia('media/productions_quest.jpg','image')">
+                        <img src="media/productions_quest.jpg" alt="Students participating in an interactive quest tour" loading="lazy">
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/productions_activity.mp4','video')">
+                        <video src="media/productions_activity_preview.mp4" aria-label="Preview of school interactive event activity" autoplay loop muted playsinline preload="metadata" poster="media/productions_activity_preview.mp4"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">00:59</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Case 05 — Inclusive Cultural Experiences -->
+            <article class="case" id="work-inclusive" style="border-bottom:none; margin-bottom:0;">
+                <div class="case-header">
+                    <p class="roleline">Social Impact &amp; Research</p>
+                    <h3 class="case-title">Inclusive cultural<br>experiences</h3>
+                </div>
+                <div class="case-grid">
+                    <div class="text-col">
+                        <p>LOGOS is a dance project exploring how gestures can speak louder than words (3rd Place, Sozhsky Karagod International Festival). Additionally, I have performed in Brys at the State Theatre of Musical Comedy, a production advocating for stray animals with tickets distributed through charities. I have also contributed to volunteer shows for retired actors in a nursing home.<br>My research on disability inclusion showed that every project should consider diverse needs.</p>
+                    </div>
+                    <div class="wm-right-box">
+                        <div class="wm-bg-num">05</div>
+                        <div class="grid-v7-inline">
+                            <div class="item-v7-inline"><div class="hdr-v7">LOGOS project</div><div class="desc-v7">non-verbal communication through dance</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">50+ performances</div><div class="desc-v7">professional stage experience and charitable outreach</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Cross-sector experience</div><div class="desc-v7">theatre + charities + nursing homes</div></div>
+                            <div class="item-v7-inline"><div class="hdr-v7">Driving purpose</div><div class="desc-v7">accessibility as an essential standard for audience engagement</div></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="media/ovz.pdf" target="_blank" rel="noopener" class="btn-fullwidth">View research project · PDF</a>
+                <div class="mediaGrid">
+                    <div class="tile has-video" onclick="openMedia('media/inclusive_brys.mp4','video')">
+                        <video src="media/inclusive_brys_preview.mp4" aria-label="Preview of Brys production at State Theatre of Musical Comedy" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:45</span></div>
+                    </div>
+                    <div class="tile" onclick="openMedia('media/inclusive_karagod.jpg','image')">
+                        <img src="media/inclusive_karagod.jpg" alt="Award ceremony at Sozhsky Karagod International Festival" loading="lazy">
+                    </div>
+                    <div class="tile tall" onclick="openMedia('media/inclusive_logos.jpg','image')">
+                        <img src="media/inclusive_logos.jpg" alt="LOGOS sign-language dance performance on stage" loading="lazy">
+                    </div>
+                    <div class="tile" onclick="openMedia('media/inclusive_veterany.jpg','image')">
+                        <img src="media/inclusive_veterany.jpg" alt="Volunteer theatrical performance for retired actors in a nursing home" loading="lazy">
+                    </div>
+                    <div class="tile has-video" onclick="openMedia('media/inclusive_logos.mp4','video')">
+                        <video src="media/inclusive_logos_preview.mp4" aria-label="Preview of LOGOS inclusive sign-language dance project" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">04:05</span></div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- FOUNDATION -->
+        <section id="foundation" class="wrap">
+            <div class="head">
+                <div class="num">03 / Foundation</div>
+                <h2 class="title">What drives<br>my readiness.</h2>
+                <img src="pig_learn.png" class="pig-learn" alt="Illustration of a flying pig reading a book" loading="lazy" width="90" height="90">
+            </div>
+
+            <div class="foundation">
+                <div class="card card-highlight">
+                    <small>Academic profile &amp; analytical foundation</small>
+                    <div class="gpa">5.0 / 5.0 Unweighted GPA</div>
+                    <ul>
+                        <li>Class Rank: 1 / 48 students</li>
+                        <li>Specialized Psychology &amp; Education curriculum (focus on behavioral understanding and group dynamics)</li>
+                        <li>Semifinalist in Academic Olympiads in Financial Literacy, Economics, and Business Fundamentals</li>
+                        <li>Coursework covering organizational behavior and conflict management</li>
+                    </ul>
+                    <div class="proof">
+                        <a href="media/academic_profile.pdf" target="_blank" rel="noopener" class="link-doc">PDF · Certificates &amp; Diplomas</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <small>Leadership &amp; negotiation</small>
+                    <h3>Debate &amp; mediation</h3>
+                    <ul>
+                        <li>First Speaker &amp; Debate Leader in competitive brackets (2,000+ participants)</li>
+                        <li>St. Petersburg City Mediation Tournament Winner</li>
+                        <li>Youth Law Enforcement Rally &amp; Spartakiad Competitor — applied legal frameworks, conflict resolution, and group dynamics in team challenges</li>
+                    </ul>
+                    <div class="proof">
+                        <a href="media/debate_and_mediation.pdf" target="_blank" rel="noopener" class="link-doc">PDF · Certificates &amp; Diplomas</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <small>Practical work experience</small>
+                    <h3>Official employment &amp; volunteering</h3>
+                    <ul>
+                        <li>9 months choreographic assistant</li>
+                        <li>6 months school assistant</li>
+                        <li>7-Year Modern Dance Diploma with official state authorization for children's dance instruction</li>
+                        <li>Registered Volunteer supporting elderly stage performers and inclusive community initiatives (120+ hours)</li>
+                    </ul>
+                    <div class="proof">
+                        <a href="media/employment_volunteering.pdf" target="_blank" rel="noopener" class="link-doc">PDF · Certificates &amp; Diplomas</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <small>Research &amp; Analysis</small>
+                    <div class="research-card-content">
+                        <div class="research-card-item">
+                            <h3>Macro-environment &amp; socio-economic analysis</h3>
+                            <p>Research on systemic barriers, economic resource allocation, and institutional stability (Educational Disparities, The Resource Curse in Libya) — evaluating external factors shaping human capital and market risks.</p>
+                            <a href="media/global_systems.pdf" target="_blank" rel="noopener" class="link-doc">PDF · READ STUDY</a>
+                        </div>
+                        <div class="research-card-item">
+                            <h3>Market dynamics &amp; industry strategy</h3>
+                            <p>Applied evaluation of sectoral opportunities (Aquaculture Development in Chile) — analyzing market conditions, supply chain parameters, and financial viability that determine project scalability.</p>
+                            <a href="media/chile.pdf" target="_blank" rel="noopener" class="link-doc">PDF · READ STUDY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-block">
+                <div class="num-no-line">PROFESSIONAL EXPERIENCE &amp; SCALE</div>
+                <div class="experience-grid">
+                    <div class="experience-col">
+                        <p>Extensive experience across major venues: Gazprom Arena (60,000+), BKZ Oktyabrsky Concert Hall (3700+), the State Theatre of Musical Comedy, and others</p>
+                    </div>
+                    <div class="experience-col">
+                        <p>Knowledge of arena crowd dynamics, multi-camera production logistics, and live televised broadcasts</p>
+                        <p style="margin-top:12px;">Experience in event organization and on-site delivery</p>
+                    </div>
+                </div>
+                <a href="media/performance.pdf" target="_blank" rel="noopener" class="btn-fullwidth">Performances &amp; Awards · PDF</a>
+            </div>
+
+        </section>
+
+        <!-- 04 APPROACH -->
+        <section id="approach" class="thinking-wrap wrap">
+            <div class="thinking">
+                <div class="num">04 / Approach</div>
+                <h2 class="title">From insight to structure.</h2>
+                <div class="principles">
+                    <div class="principle">
+                        <div class="principle-watermark">01</div>
+                        <span class="script-label">Perception</span>
+                        <p>Working with teenagers, seniors, and creative professionals across projects of different scales has shown me how differently people perceive the same space. Instead of assuming what an audience wants, I begin with their actual barriers and needs so the final outcome is engaging and truly works for them.</p>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-watermark">02</div>
+                        <span class="script-label">Systems</span>
+                        <p>Creative ambition only holds when the structure underneath is reliable: clear roles, realistic timelines, resource allocation, and coordination. I focus on setting up each project so it remains workable under real constraints, allowing the execution to stay consistent and considered from start to finish.</p>
+                    </div>
+                    <div class="principle">
+                        <div class="principle-watermark">03</div>
+                        <span class="script-label">Purpose</span>
+                        <p>My next step is to strengthen the business and organizational side of this work. I want to apply strategy, resource management and operational clarity to professional events and cultural projects, so ideas can grow into initiatives that are both viable and carefully shaped for the people they serve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 ARCHIVE -->
+        <section id="archive" class="gallery-section wrap">
+            <div class="head">
+                <div class="num">05 / Comprehensive Archive</div>
+                <h2 class="title">Steps along the way.</h2>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-target="academic">Academic Foundations</button>
+                <button class="tab-btn" data-target="choreography">Choreography</button>
+                <button class="tab-btn" data-target="theatre">Theatre</button>
+            </div>
+
+            <div class="carousel-container active" id="academic">
+                <p class="carousel-desc">Verifiable record of top academic standing, debate and mediation achievements, and specialized coursework.</p>
+                <div class="carousel-track" id="academicTrack"></div>
+            </div>
+
+            <div class="carousel-container" id="choreography">
+                <p class="carousel-desc">7-year diploma with teaching authorization, spatial movement literacy, and modern dance training with Active Project studio.</p>
+                <div class="carousel-track" id="choreographyTrack"></div>
+            </div>
+
+            <div class="carousel-container" id="theatre">
+                <p class="carousel-desc">Practical stage discipline, repertory theatre workflow with Blue Bird studio, and 30+ performances on state theatrical stages.</p>
+                <div class="carousel-track" id="theatreTrack"></div>
+            </div>
+        </section>
+
+        <!-- 06 CONTACT -->
+        <section id="contact" class="contact-section wrap">
+            <div class="contact-top">
+                <img src="pig_stand.png" class="pig-stand" alt="Illustration of a flying pig standing" loading="lazy" width="90" height="90">
+                <div class="num">06 / Contact</div>
+                <h2 class="contactTitle">Let's make these<br><span>wings count.</span></h2>
+            </div>
+        </section>
+
+        <div class="contact-banner">
+            <div class="contact-row">
+                <div class="contact-email">
+                    <a href="mailto:mikhalinadarina@gmail.com">MIKHALINADARINA@GMAIL.COM</a>
+                </div>
+                <span class="contact-divider"></span>
+                <div class="contact-icons">
+                    <a href="mailto:mikhalinadarina@gmail.com" aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M40 12H8C5.8 12 4 13.8 4 16V32C4 34.2 5.8 36 8 36H40C42.2 36 44 34.2 44 32V16C44 13.8 42.2 12 40 12ZM40 16L24 26L8 16H40ZM40 32H8V19L24 29L40 19V32Z" fill="#711a32"/></svg></a>
+                    <a href="https://instagram.com/darchinix" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><rect x="8" y="8" width="32" height="32" rx="9" fill="none" stroke="#711a32" stroke-width="3.5"/><circle cx="24" cy="24" r="7" fill="none" stroke="#711a32" stroke-width="3.5"/><circle cx="32.5" cy="15.5" r="2" fill="#711a32"/></svg></a>
+                    <a href="https://t.me/darchinix" target="_blank" rel="noopener" aria-label="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M38.8 11.2L7.6 23.2C5.5 24 5.5 25.2 7.2 25.7L15.2 28.2L33.7 16.5C34.6 15.9 35.4 16.2 34.7 16.8L19.7 30.3H19.6L19.7 30.4L19.1 38.5C20.3 38.5 20.8 38 21.5 37.3L27.3 31.7L33.3 36.1C34.4 36.7 35.2 36.4 35.5 35.1L39.9 14.3C40.3 12.6 39.3 11.8 38.8 11.2Z" fill="#711a32"/></svg></a>
+                    <a href="https://vk.com/darchinix" target="_blank" rel="noopener" aria-label="VK"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><rect width="48" height="48" fill="transparent"/><path d="M25.08 37c-11.45 0-17.98-7.86-18.26-20.94h5.73c.19 9.58 4.41 13.64 7.76 14.48V16.06h5.39v8.27c3.3-.35 6.78-4.12 7.95-8.27h5.39c-.9 5.09-4.66 8.86-7.34 10.42 2.68 1.26 6.89 4.6 8.35 10.52h-5.93c-1.14-3.56-3.98-6.31-7.76-6.68V37z" fill="#711a32"/></svg></a>
+                </div>
+                <span class="contact-divider"></span>
+                <div class="contact-btn-wrap">
+                    <a href="media/darina_mikhalina_portfolio.pdf" target="_blank" rel="noopener" class="btn-download">Download CV · PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="contact-footer">
+                © 2026 Darina Mikhalina. All rights reserved.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal" id="mediaModal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modalImg" src="" alt="Full size preview">
+            <video id="modalVid" controls playsinline></video>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Darina Mikhalina",
+      "url": "https://www.mikhalinadarina.com/",
+      "image": "https://www.mikhalinadarina.com/portret.jpg",
+      "jobTitle": "Event Manager · Cultural Project Coordinator",
+      "email": "mailto:mikhalinadarina@gmail.com",
+      "sameAs": [
+        "https://instagram.com/darchinix",
+        "https://t.me/darchinix",
+        "https://vk.com/darchinix"
+      ],
+      "knowsAbout": [
+        "Event Management",
+        "Cultural Projects",
+        "Live Events",
+        "Project Coordination",
+        "Inclusive Experiences"
+      ]
+    }
+    </script>
+
+    <script>
+        // Mobile Menu Toggle
+        const toggleBtn = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Archive Tabs
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const carousels = document.querySelectorAll('.carousel-container');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                carousels.forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.getAttribute('data-target')).classList.add('active');
+                const trackId = btn.getAttribute('data-target') + 'Track';
+                const track = document.getElementById(trackId);
+                if (track) {
+                    track.style.display = 'flex';
+                }
+            });
+        });
+
+        // ---- CAROUSEL DATA ----
+        const carouselData = {
+            academic: {
+                images: [
+                    { src: 'media/academic/diplom_01.jpg', w: 860, h: 1015 },
+                    { src: 'media/academic/diplom_02.jpg', w: 580, h: 685 },
+                    { src: 'media/academic/diplom_03.jpg', w: 2180, h: 3368 },
+                    { src: 'media/academic/diplom_04.jpg', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_05.jpg', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_06.jpg', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_07.jpg', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_08.jpg', w: 3507, h: 2480 },
+                    { src: 'media/academic/diplom_09.jpg', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_10.jpg', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_11.jpg', w: 2430, h: 1731 },
+                    { src: 'media/academic/diplom_12.jpg', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_13.jpg', w: 3507, h: 2480 },
+                    { src: 'media/academic/diplom_14.jpg', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_15.jpg', w: 794, h: 1123 },
+                    { src: 'media/academic/diplom_16.jpg', w: 1080, h: 1528 },
+                    { src: 'media/academic/diplom_17.jpg', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_18.jpg', w: 1778, h: 2560 },
+                    { src: 'media/academic/diplom_19.jpg', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_20.jpg', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_21.jpg', w: 1191, h: 1684 }
+                ]
+            },
+            choreography: {
+                images: [
+                    { src: 'media/dance/dance_01.jpg', w: 960, h: 1280 },
+                    { src: 'media/dance/dance_02.jpg', w: 1231, h: 876 },
+                    { src: 'media/dance/dance_03.jpg', w: 879, h: 1280 },
+                    { src: 'media/dance/dance_04.jpg', w: 1408, h: 1056 },
+                    { src: 'media/dance/dance_05.jpg', w: 720, h: 1280 },
+                    { src: 'media/dance/dance_06.jpg', w: 1600, h: 960 },
+                    { src: 'media/dance/dance_07.jpg', w: 2560, h: 1761 },
+                    { src: 'media/dance/dance_08.jpg', w: 1600, h: 900 },
+                    { src: 'media/dance/dance_09.jpg', w: 956, h: 919 },
+                    { src: 'media/dance/dance_10.jpg', w: 960, h: 1280 },
+                    { src: 'media/dance/dance_11.jpg', w: 1280, h: 854 },
+                    { src: 'media/dance/dance_13.jpg', w: 903, h: 1278 },
+                    { src: 'media/dance/dance_14.jpg', w: 1280, h: 1103 },
+                    { src: 'media/dance/dance_15.jpg', w: 1280, h: 851 },
+                    { src: 'media/dance/dance_16.jpg', w: 900, h: 1600 },
+                    { src: 'media/dance/dance_17.jpg', w: 1200, h: 1600 },
+                    { src: 'media/dance/dance_18.jpg', w: 1600, h: 1200 },
+                    { src: 'media/dance/dance_19.jpg', w: 2500, h: 1667 },
+                    { src: 'media/dance/dance_20.jpg', w: 1280, h: 855 },
+                    { src: 'media/dance/dance_21.jpg', w: 2560, h: 1440 },
+                    { src: 'media/dance/dance_22.jpg', w: 2560, h: 1683 },
+                    { src: 'media/dance/dance_23.jpg', w: 1200, h: 1600 },
+                    { src: 'media/dance/dance_24.jpg', w: 960, h: 1280 },
+                    { src: 'media/dance/dance_25.jpg', w: 2560, h: 1387 },
+                    { src: 'media/dance/dance_26.jpg', w: 1994, h: 2560 },
+                    { src: 'media/dance/dance_27.jpg', w: 2560, h: 1152 },
+                    { src: 'media/dance/dance_28.jpg', w: 2560, h: 1920 },
+                    { src: 'media/dance/dance_29.jpg', w: 1758, h: 2560 },
+                    { src: 'media/dance/dance_30.jpg', w: 1518, h: 2560 },
+                    { src: 'media/dance/dance_31.jpg', w: 1600, h: 901 },
+                    { src: 'media/dance/dance_32.jpg', w: 1280, h: 960 },
+                    { src: 'media/dance/dance_33.jpg', w: 1280, h: 720 },
+                    { src: 'media/dance/dance_34.png', w: 858, h: 1226 }
+                ]
+            },
+            theatre: {
+                images: [
+                    { src: 'media/theatre/theatre_01.jpeg', w: 552, h: 429 },
+                    { src: 'media/theatre/theatre_02.JPG', w: 868, h: 1156 },
+                    { src: 'media/theatre/theatre_03.jpg', w: 2741, h: 1824 },
+                    { src: 'media/theatre/theatre_04.jpg', w: 400, h: 265 },
+                    { src: 'media/theatre/theatre_05.jpg', w: 2560, h: 1438 },
+                    { src: 'media/theatre/theatre_06.JPG', w: 2448, h: 3264 },
+                    { src: 'media/theatre/theatre_07.JPG', w: 868, h: 1156 },
+                    { src: 'media/theatre/theatre_08.jpg', w: 1280, h: 854 },
+                    { src: 'media/theatre/theatre_09.JPG', w: 2448, h: 3264 },
+                    { src: 'media/theatre/theatre_10.jpg', w: 824, h: 558 },
+                    { src: 'media/theatre/theatre_11.JPG', w: 2448, h: 3264 }
+                ]
+            }
+        };
+
+        // ---- BUILD CAROUSELS ----
+        function buildCarousel(trackId, images, altText) {
+            const track = document.getElementById(trackId);
+            if (!track) return;
+            track.innerHTML = '';
+            const height = window.innerWidth <= 600 ? 120 : (window.innerWidth <= 900 ? 160 : 224);
+            images.forEach(img => {
+                const aspect = img.w / img.h;
+                let width = height * aspect;
+                const maxW = window.innerWidth <= 600 ? 300 : (window.innerWidth <= 900 ? 400 : 560);
+                const minW = window.innerWidth <= 600 ? 30 : (window.innerWidth <= 900 ? 40 : 60);
+                if (width > maxW) width = maxW;
+                if (width < minW) width = minW;
+
+                const item = document.createElement('div');
+                item.className = 'carousel-item';
+                item.style.height = height + 'px';
+                item.style.width = Math.round(width) + 'px';
+                item.onclick = function() { openMedia(img.src, 'image'); };
+
+                const el = document.createElement('img');
+                el.src = img.src;
+                el.alt = altText;
+                el.loading = 'lazy';
+                el.style.height = '100%';
+                el.style.width = '100%';
+                el.style.objectFit = 'contain';
+                el.style.display = 'block';
+
+                item.appendChild(el);
+                track.appendChild(item);
+            });
+        }
+
+        buildCarousel('academicTrack', carouselData.academic.images, 'Academic diploma, certificate, or award');
+        buildCarousel('choreographyTrack', carouselData.choreography.images, 'Choreographic rehearsal, dance performance, or studio archive photo');
+        buildCarousel('theatreTrack', carouselData.theatre.images, 'Stage production performance or theatrical backstage photo');
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                buildCarousel('academicTrack', carouselData.academic.images, 'Academic diploma, certificate, or award');
+                buildCarousel('choreographyTrack', carouselData.choreography.images, 'Choreographic rehearsal, dance performance, or studio archive photo');
+                buildCarousel('theatreTrack', carouselData.theatre.images, 'Stage production performance or theatrical backstage photo');
+            }, 300);
+        });
+
+        // ---- MODAL ----
+        const modal = document.getElementById('mediaModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalVid = document.getElementById('modalVid');
+
+        function openMedia(src, type) {
+            modalImg.style.display = 'none';
+            modalVid.style.display = 'none';
+            modalVid.pause();
+
+            if (type === 'image') {
+                modalImg.src = src;
+                modalImg.style.display = 'block';
+            } else if (type === 'video') {
+                modalVid.src = src;
+                modalVid.style.display = 'block';
+                modalVid.play();
+            }
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            modalVid.pause();
+            modalImg.src = '';
+            modalVid.src = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+
+</body>
+</html>
