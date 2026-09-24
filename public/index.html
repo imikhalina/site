@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://www.mikhalinadarina.com/">
     <meta property="og:title" content="Darina Mikhalina — Business · Events · Experience">
     <meta property="og:description" content="Business and event management portfolio — live events, inclusive cultural projects and research-based case studies.">
-    <meta property="og:image" content="https://www.mikhalinadarina.com/og-preview.jpg">
+    <meta property="og:image" content="https://www.mikhalinadarina.com/og-preview.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_US">
@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Darina Mikhalina — Business · Events · Experience">
     <meta name="twitter:description" content="Business and event management portfolio — live events, inclusive cultural projects and research-based case studies.">
-    <meta name="twitter:image" content="https://www.mikhalinadarina.com/og-preview.jpg">
+    <meta name="twitter:image" content="https://www.mikhalinadarina.com/og-preview.webp">
 
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -39,12 +39,46 @@
     <meta name="msapplication-TileColor" content="#711a32">
     <meta name="msapplication-config" content="none">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
-
     <style>
+        /* Inter */
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/fonts/inter-v20-latin-regular.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('/fonts/inter-v20-latin-500.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url('/fonts/inter-v20-latin-600.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('/fonts/inter-v20-latin-700.woff2') format('woff2');
+        }
+
+        /* Reenie Beanie */
+        @font-face {
+            font-family: 'Reenie Beanie';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/fonts/reenie-beanie-v22-latin-regular.woff2') format('woff2');
+        }
+
         :root {
             --bg: #f5f5f5;
             --ink: #1c1918;
@@ -759,7 +793,7 @@
 
                     <div class="portrait-container">
                         <div class="portrait-corner"></div>
-                        <img src="portret.jpg" alt="Portrait of Darina Mikhalina" class="portrait-photo" width="420" height="420">
+                        <img src="portret.webp" alt="Portrait of Darina Mikhalina" class="portrait-photo" width="420" height="420">
                     </div>
                 </div>
             </div>
@@ -835,21 +869,21 @@
                 </div>
                 <a href="media/jobspb_project.pdf" target="_blank" rel="noopener" class="btn-fullwidth">View Project · PDF</a>
                 <div class="mediaGrid">
-                    <div class="tile tall" onclick="openMedia('media/jobspb_diagram.JPG','image')">
-                        <img src="media/jobspb_diagram.JPG" alt="JobSPB research diagram and user survey analytics" loading="lazy">
+                    <div class="tile tall" onclick="openMedia('media/jobspb_diagram.webp','image')">
+                        <img src="media/jobspb_diagram.webp" alt="JobSPB research diagram and user survey analytics" loading="lazy">
                     </div>
-                    <div class="tile" onclick="openMedia('media/Jobspb_hypothesis.JPG','image')">
-                        <img src="media/Jobspb_hypothesis.JPG" alt="JobSPB project hypothesis and testing workflow" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/Jobspb_hypothesis.webp','image')">
+                        <img src="media/Jobspb_hypothesis.webp" alt="JobSPB project hypothesis and testing workflow" loading="lazy">
                     </div>
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/jobspb_videoguide.mp4','video')">
-                        <video src="media/jobspb_videoguide_preview.mp4" aria-label="Preview video of JobSPB multimedia youth guide" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/jobspb_videoguide_preview.mp4" aria-label="Preview video of JobSPB multimedia youth guide" loop muted playsinline preload="none" poster="media/jobspb_videoguide_preview.mp4"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">02:55</span></div>
                     </div>
-                    <div class="tile" onclick="openMedia('media/jobspb_urok.jpg','image')">
-                        <img src="media/jobspb_urok.jpg" alt="Educational lesson and presentation slide for JobSPB youth guide" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/jobspb_urok.webp','image')">
+                        <img src="media/jobspb_urok.webp" alt="Educational lesson and presentation slide for JobSPB youth guide" loading="lazy">
                     </div>
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/jobspb_presentation.mp4','video')">
-                        <video src="media/jobspb_presentation_preview.mp4" aria-label="Preview video of JobSPB project presentation" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/jobspb_presentation_preview.mp4" aria-label="Preview video of JobSPB project presentation" loop muted playsinline preload="none" poster="media/jobspb_presentation_preview.mp4"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:25</span></div>
                     </div>
                 </div>
@@ -878,21 +912,21 @@
                 <div class="result-plate">#1 MOST-VISITED SCHOOL-LED VENUE AT SPB IEF 2026 · SELECTED AS A HOST VENUE FOR THE FOLLOWING EDITION</div>
                 <div class="mediaGrid">
                     <div class="tile tall has-video" onclick="openMedia('https://video.mikhalinadarina.com/dance_film.mp4','video')">
-                        <video src="media/dance_film_preview.mp4" aria-label="Preview of original educational dance film" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/dance_film_preview.mp4" aria-label="Preview of original educational dance film" loop muted playsinline preload="none" poster="media/dance_film_preview.mp4"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">06:53</span></div>
                     </div>
-                    <div class="tile" onclick="openMedia('media/spbiefktd1.jpg','image')">
-                        <img src="media/spbiefktd1.jpg" alt="Interactive group workshop at Saint Petersburg International Educational Forum" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/spbiefktd1.webp','image')">
+                        <img src="media/spbiefktd1.webp" alt="Interactive group workshop at Saint Petersburg International Educational Forum" loading="lazy">
                     </div>
                     <div class="tile has-video" onclick="openMedia('media/spbief_ktd.mp4','video')">
-                        <video src="media/spbief_ktd_preview.mp4" aria-label="Preview of interactive event format at SPB IEF" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/spbief_ktd_preview.mp4" aria-label="Preview of interactive event format at SPB IEF" loop muted playsinline preload="none" poster="media/spbief_ktd_preview.mp4"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">00:09</span></div>
                     </div>
-                    <div class="tile" onclick="openMedia('media/dance_interview.jpg','image')">
-                        <img src="media/dance_interview.jpg" alt="Darina Mikhalina giving an interview about the educational dance film project" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/dance_interview.webp','image')">
+                        <img src="media/dance_interview.webp" alt="Darina Mikhalina giving an interview about the educational dance film project" loading="lazy">
                     </div>
-                    <div class="tile" onclick="openMedia('media/spbiefktd2.jpg','image')">
-                        <img src="media/spbiefktd2.jpg" alt="Participants engaged in collaborative activity at SPB IEF venue" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/spbiefktd2.webp','image')">
+                        <img src="media/spbiefktd2.webp" alt="Participants engaged in collaborative activity at SPB IEF venue" loading="lazy">
                     </div>
                 </div>
             </article>
@@ -919,22 +953,22 @@
                 </div>
                 <div class="mediaGrid">
                     <div class="tile wide has-video" onclick="openMedia('https://video.mikhalinadarina.com/events_flashmob.mp4','video')">
-                        <video src="media/events_flashmob_preview.mp4" aria-label="Preview of large-scale live flashmob performance" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/events_flashmob_preview.mp4" aria-label="Preview of large-scale live flashmob performance" loop muted playsinline preload="none"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">00:50</span></div>
                     </div>
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/events_arena.mp4','video')">
-                        <video src="media/events_arena_preview.mp4" aria-label="Preview of arena show live broadcast production" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/events_arena_preview.mp4" aria-label="Preview of arena show live broadcast production" loop muted playsinline preload="none"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:05</span></div>
                     </div>
-                    <div class="tile" onclick="openMedia('media/events_zenith.jpg','image')">
-                        <img src="media/events_zenith.jpg" alt="Live choreography performance on stage at Gazprom Arena" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/events_zenith.webp','image')">
+                        <img src="media/events_zenith.webp" alt="Live choreography performance on stage at Gazprom Arena" loading="lazy">
                     </div>
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/events_bkz.mp4','video')">
-                        <video src="media/events_bkz_preview.mp4" aria-label="Preview of performance at BKZ Oktyabrsky Concert Hall" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/events_bkz_preview.mp4" aria-label="Preview of performance at BKZ Oktyabrsky Concert Hall" loop muted playsinline preload="none"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:11</span></div>
                     </div>
-                    <div class="tile" onclick="openMedia('media/events_chorus.jpg','image')">
-                        <img src="media/events_chorus.jpg" alt="Mass choir performance at Rastrelli Square near Smolny Cathedral" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/events_chorus.webp','image')">
+                        <img src="media/events_chorus.webp" alt="Mass choir performance at Rastrelli Square near Smolny Cathedral" loading="lazy">
                     </div>
                 </div>
             </article>
@@ -960,21 +994,21 @@
                     </div>
                 </div>
                 <div class="mediaGrid">
-                    <div class="tile wide" onclick="openMedia('media/productions_mediation.jpg','image')">
-                        <img src="media/productions_mediation.jpg" alt="Peer mediation team presenting at regional competition" loading="lazy">
+                    <div class="tile wide" onclick="openMedia('media/productions_mediation.webp','image')">
+                        <img src="media/productions_mediation.webp" alt="Peer mediation team presenting at regional competition" loading="lazy">
                     </div>
-                    <div class="tile" onclick="openMedia('media/productions_debate.jpg','image')">
-                        <img src="media/productions_debate.jpg" alt="Darina speaking as debate leader during school competition" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/productions_debate.webp','image')">
+                        <img src="media/productions_debate.webp" alt="Darina speaking as debate leader during school competition" loading="lazy">
                     </div>
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/productions_dance.mp4','video')">
-                        <video src="media/productions_dance_preview.mp4" aria-label="Preview of school choreography and Last Bell waltz staging" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/productions_dance_preview.mp4" aria-label="Preview of school choreography and Last Bell waltz staging" loop muted playsinline preload="none" poster="media/productions_dance_preview.mp4"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">03:00</span></div>
                     </div>
-                    <div class="tile" onclick="openMedia('media/productions_quest.jpg','image')">
-                        <img src="media/productions_quest.jpg" alt="Students participating in an interactive quest tour" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/productions_quest.webp','image')">
+                        <img src="media/productions_quest.webp" alt="Students participating in an interactive quest tour" loading="lazy">
                     </div>
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/productions_activity.mp4','video')">
-                        <video src="media/productions_activity_preview.mp4" aria-label="Preview of school interactive event activity" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/productions_activity_preview.mp4" aria-label="Preview of school interactive event activity" loop muted playsinline preload="none" poster="media/productions_activity_preview.mp4"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">00:59</span></div>
                     </div>
                 </div>
@@ -1003,20 +1037,20 @@
                 <a href="media/ovz.pdf" target="_blank" rel="noopener" class="btn-fullwidth">View research project · PDF</a>
                 <div class="mediaGrid">
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/inclusive_brys.mp4','video')">
-                        <video src="media/inclusive_brys_preview.mp4" aria-label="Preview of Brys production at State Theatre of Musical Comedy" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/inclusive_brys_preview.mp4" aria-label="Preview of Brys production at State Theatre of Musical Comedy" loop muted playsinline preload="none"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">01:45</span></div>
                     </div>
-                    <div class="tile" onclick="openMedia('media/inclusive_karagod.jpg','image')">
-                        <img src="media/inclusive_karagod.jpg" alt="Award ceremony at Sozhsky Karagod International Festival" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/inclusive_karagod.webp','image')">
+                        <img src="media/inclusive_karagod.webp" alt="Award ceremony at Sozhsky Karagod International Festival" loading="lazy">
                     </div>
-                    <div class="tile tall" onclick="openMedia('media/inclusive_logos.JPG','image')">
-                        <img src="media/inclusive_logos.JPG" alt="LOGOS sign-language dance performance on stage" loading="lazy">
+                    <div class="tile tall" onclick="openMedia('media/inclusive_logos.webp','image')">
+                        <img src="media/inclusive_logos.webp" alt="LOGOS sign-language dance performance on stage" loading="lazy">
                     </div>
-                    <div class="tile" onclick="openMedia('media/inclusive_veterany.jpg','image')">
-                        <img src="media/inclusive_veterany.jpg" alt="Volunteer theatrical performance for retired actors in a nursing home" loading="lazy">
+                    <div class="tile" onclick="openMedia('media/inclusive_veterany.webp','image')">
+                        <img src="media/inclusive_veterany.webp" alt="Volunteer theatrical performance for retired actors in a nursing home" loading="lazy">
                     </div>
                     <div class="tile has-video" onclick="openMedia('https://video.mikhalinadarina.com/inclusive_logos.mp4','video')">
-                        <video src="media/inclusive_logos_preview.mp4" aria-label="Preview of LOGOS inclusive sign-language dance project" autoplay loop muted playsinline preload="auto"></video>
+                        <video src="media/inclusive_logos_preview.mp4" aria-label="Preview of LOGOS inclusive sign-language dance project" loop muted playsinline preload="none"></video>
                         <div class="play-duration"><svg viewBox="0 0 24 24"><polygon points="4,2 20,12 4,22"/></svg> <span class="duration-text">04:05</span></div>
                     </div>
                 </div>
@@ -1029,7 +1063,7 @@
             <div class="head">
                 <div class="num">03 / Foundation</div>
                 <h2 class="title">What drives<br>my readiness.</h2>
-                <img src="pig_learn.png" class="pig-learn" alt="Illustration of a flying pig reading a book" loading="lazy" width="90" height="90">
+                <img src="pig_learn.png" class="pig-learn" alt="Illustration of a flying pig reading a book" width="90" height="90">
             </div>
 
             <div class="foundation">
@@ -1164,7 +1198,7 @@
         <!-- 06 CONTACT -->
         <section id="contact" class="contact-section wrap">
             <div class="contact-top">
-                <img src="pig_stand.png" class="pig-stand" alt="Illustration of a flying pig standing" loading="lazy" width="90" height="90">
+                <img src="pig_stand.png" class="pig-stand" alt="Illustration of a flying pig standing" width="90" height="90">
                 <div class="num">06 / Contact</div>
                 <h2 class="contactTitle">Let's make these<br><span>wings count.</span></h2>
             </div>
@@ -1184,7 +1218,7 @@
                 </div>
                 <span class="contact-divider"></span>
                 <div class="contact-btn-wrap">
-                    <a href="media/Darina_Mikhalina_Portfolio.pdf" target="_blank" rel="noopener" class="btn-download">Download CV · PDF</a>
+                    <a href="media/darina_mikhalina_portfolio.pdf" target="_blank" rel="noopener" class="btn-download">Download CV · PDF</a>
                 </div>
             </div>
         </div>
@@ -1212,7 +1246,7 @@
       "@type": "Person",
       "name": "Darina Mikhalina",
       "url": "https://www.mikhalinadarina.com/",
-      "image": "https://www.mikhalinadarina.com/portret.jpg",
+      "image": "https://www.mikhalinadarina.com/portret.webp",
       "jobTitle": "Event Manager · Cultural Project Coordinator",
       "email": "mailto:mikhalinadarina@gmail.com",
       "sameAs": [
@@ -1245,112 +1279,101 @@
             }
         });
 
-        // Archive Tabs
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const carousels = document.querySelectorAll('.carousel-container');
-
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                tabBtns.forEach(b => b.classList.remove('active'));
-                carousels.forEach(c => c.classList.remove('active'));
-                btn.classList.add('active');
-                document.getElementById(btn.getAttribute('data-target')).classList.add('active');
-                const trackId = btn.getAttribute('data-target') + 'Track';
-                const track = document.getElementById(trackId);
-                if (track) {
-                    track.style.display = 'flex';
-                }
-            });
-        });
-
         // ---- CAROUSEL DATA ----
         const carouselData = {
             academic: {
+                alt: 'Academic diploma, certificate, or award',
                 images: [
-                    { src: 'media/academic/diplom_01.jpg', w: 860, h: 1015 },
-                    { src: 'media/academic/diplom_02.jpg', w: 580, h: 685 },
-                    { src: 'media/academic/diplom_03.jpg', w: 2180, h: 3368 },
-                    { src: 'media/academic/diplom_04.jpg', w: 1191, h: 1684 },
-                    { src: 'media/academic/diplom_05.jpg', w: 2480, h: 3507 },
-                    { src: 'media/academic/diplom_06.jpg', w: 2480, h: 3507 },
-                    { src: 'media/academic/diplom_07.jpg', w: 2480, h: 3507 },
-                    { src: 'media/academic/diplom_08.jpg', w: 3507, h: 2480 },
-                    { src: 'media/academic/diplom_09.jpg', w: 2480, h: 3507 },
-                    { src: 'media/academic/diplom_10.jpg', w: 1191, h: 1684 },
-                    { src: 'media/academic/diplom_11.jpg', w: 2430, h: 1731 },
-                    { src: 'media/academic/diplom_12.jpg', w: 2480, h: 3507 },
-                    { src: 'media/academic/diplom_13.jpg', w: 3507, h: 2480 },
-                    { src: 'media/academic/diplom_14.jpg', w: 1191, h: 1684 },
-                    { src: 'media/academic/diplom_15.jpg', w: 794, h: 1123 },
-                    { src: 'media/academic/diplom_16.jpg', w: 1080, h: 1528 },
-                    { src: 'media/academic/diplom_17.jpg', w: 2480, h: 3507 },
-                    { src: 'media/academic/diplom_18.jpg', w: 1778, h: 2560 },
-                    { src: 'media/academic/diplom_19.jpg', w: 1191, h: 1684 },
-                    { src: 'media/academic/diplom_20.jpg', w: 2480, h: 3507 },
-                    { src: 'media/academic/diplom_21.jpg', w: 1191, h: 1684 }
+                    { src: 'media/academic/diplom_01.webp', w: 860, h: 1015 },
+                    { src: 'media/academic/diplom_02.webp', w: 580, h: 685 },
+                    { src: 'media/academic/diplom_03.webp', w: 2180, h: 3368 },
+                    { src: 'media/academic/diplom_04.webp', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_05.webp', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_06.webp', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_07.webp', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_08.webp', w: 3507, h: 2480 },
+                    { src: 'media/academic/diplom_09.webp', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_10.webp', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_11.webp', w: 2430, h: 1731 },
+                    { src: 'media/academic/diplom_12.webp', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_13.webp', w: 3507, h: 2480 },
+                    { src: 'media/academic/diplom_14.webp', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_15.webp', w: 794, h: 1123 },
+                    { src: 'media/academic/diplom_16.webp', w: 1080, h: 1528 },
+                    { src: 'media/academic/diplom_17.webp', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_18.webp', w: 1778, h: 2560 },
+                    { src: 'media/academic/diplom_19.webp', w: 1191, h: 1684 },
+                    { src: 'media/academic/diplom_20.webp', w: 2480, h: 3507 },
+                    { src: 'media/academic/diplom_21.webp', w: 1191, h: 1684 }
                 ]
             },
             choreography: {
+                alt: 'Choreographic rehearsal, dance performance, or studio archive photo',
                 images: [
-                    { src: 'media/dance/dance_01.jpg', w: 960, h: 1280 },
-                    { src: 'media/dance/dance_02.jpg', w: 1231, h: 876 },
-                    { src: 'media/dance/dance_03.jpg', w: 879, h: 1280 },
-                    { src: 'media/dance/dance_04.jpg', w: 1408, h: 1056 },
-                    { src: 'media/dance/dance_05.jpg', w: 720, h: 1280 },
-                    { src: 'media/dance/dance_06.jpg', w: 1600, h: 960 },
-                    { src: 'media/dance/dance_07.jpg', w: 2560, h: 1761 },
-                    { src: 'media/dance/dance_08.jpg', w: 1600, h: 900 },
-                    { src: 'media/dance/dance_09.jpg', w: 956, h: 919 },
-                    { src: 'media/dance/dance_10.jpg', w: 960, h: 1280 },
-                    { src: 'media/dance/dance_11.jpg', w: 1280, h: 854 },
-                    { src: 'media/dance/dance_13.jpg', w: 903, h: 1278 },
-                    { src: 'media/dance/dance_14.jpg', w: 1280, h: 1103 },
-                    { src: 'media/dance/dance_15.jpg', w: 1280, h: 851 },
-                    { src: 'media/dance/dance_16.jpg', w: 900, h: 1600 },
-                    { src: 'media/dance/dance_17.jpg', w: 1200, h: 1600 },
-                    { src: 'media/dance/dance_18.jpg', w: 1600, h: 1200 },
-                    { src: 'media/dance/dance_19.jpg', w: 2500, h: 1667 },
-                    { src: 'media/dance/dance_20.jpg', w: 1280, h: 855 },
-                    { src: 'media/dance/dance_21.jpg', w: 2560, h: 1440 },
-                    { src: 'media/dance/dance_22.jpg', w: 2560, h: 1683 },
-                    { src: 'media/dance/dance_23.jpg', w: 1200, h: 1600 },
-                    { src: 'media/dance/dance_24.jpg', w: 960, h: 1280 },
-                    { src: 'media/dance/dance_25.jpg', w: 2560, h: 1387 },
-                    { src: 'media/dance/dance_26.jpg', w: 1994, h: 2560 },
-                    { src: 'media/dance/dance_27.jpg', w: 2560, h: 1152 },
-                    { src: 'media/dance/dance_28.jpg', w: 2560, h: 1920 },
-                    { src: 'media/dance/dance_29.jpg', w: 1758, h: 2560 },
-                    { src: 'media/dance/dance_30.jpg', w: 1518, h: 2560 },
-                    { src: 'media/dance/dance_31.jpg', w: 1600, h: 901 },
-                    { src: 'media/dance/dance_32.jpg', w: 1280, h: 960 },
-                    { src: 'media/dance/dance_33.jpg', w: 1280, h: 720 },
-                    { src: 'media/dance/dance_34.png', w: 858, h: 1226 }
+                    { src: 'media/dance/dance_01.webp', w: 960, h: 1280 },
+                    { src: 'media/dance/dance_02.webp', w: 1231, h: 876 },
+                    { src: 'media/dance/dance_03.webp', w: 879, h: 1280 },
+                    { src: 'media/dance/dance_04.webp', w: 1408, h: 1056 },
+                    { src: 'media/dance/dance_05.webp', w: 720, h: 1280 },
+                    { src: 'media/dance/dance_06.webp', w: 1600, h: 960 },
+                    { src: 'media/dance/dance_07.webp', w: 2560, h: 1761 },
+                    { src: 'media/dance/dance_08.webp', w: 1600, h: 900 },
+                    { src: 'media/dance/dance_09.webp', w: 956, h: 919 },
+                    { src: 'media/dance/dance_10.webp', w: 960, h: 1280 },
+                    { src: 'media/dance/dance_11.webp', w: 1280, h: 854 },
+                    { src: 'media/dance/dance_13.webp', w: 903, h: 1278 },
+                    { src: 'media/dance/dance_14.webp', w: 1280, h: 1103 },
+                    { src: 'media/dance/dance_15.webp', w: 1280, h: 851 },
+                    { src: 'media/dance/dance_16.webp', w: 900, h: 1600 },
+                    { src: 'media/dance/dance_17.webp', w: 1200, h: 1600 },
+                    { src: 'media/dance/dance_18.webp', w: 1600, h: 1200 },
+                    { src: 'media/dance/dance_19.webp', w: 2500, h: 1667 },
+                    { src: 'media/dance/dance_20.webp', w: 1280, h: 855 },
+                    { src: 'media/dance/dance_21.webp', w: 2560, h: 1440 },
+                    { src: 'media/dance/dance_22.webp', w: 2560, h: 1683 },
+                    { src: 'media/dance/dance_23.webp', w: 1200, h: 1600 },
+                    { src: 'media/dance/dance_24.webp', w: 960, h: 1280 },
+                    { src: 'media/dance/dance_25.webp', w: 2560, h: 1387 },
+                    { src: 'media/dance/dance_26.webp', w: 1994, h: 2560 },
+                    { src: 'media/dance/dance_27.webp', w: 2560, h: 1152 },
+                    { src: 'media/dance/dance_28.webp', w: 2560, h: 1920 },
+                    { src: 'media/dance/dance_29.webp', w: 1758, h: 2560 },
+                    { src: 'media/dance/dance_30.webp', w: 1518, h: 2560 },
+                    { src: 'media/dance/dance_31.webp', w: 1600, h: 901 },
+                    { src: 'media/dance/dance_32.webp', w: 1280, h: 960 },
+                    { src: 'media/dance/dance_33.webp', w: 1280, h: 720 },
+                    { src: 'media/dance/dance_34.webp', w: 858, h: 1226 }
                 ]
             },
             theatre: {
+                alt: 'Stage production performance or theatrical backstage photo',
                 images: [
-                    { src: 'media/theatre/theatre_01.jpeg', w: 552, h: 429 },
-                    { src: 'media/theatre/theatre_02.JPG', w: 868, h: 1156 },
-                    { src: 'media/theatre/theatre_03.jpg', w: 2741, h: 1824 },
-                    { src: 'media/theatre/theatre_04.jpg', w: 400, h: 265 },
-                    { src: 'media/theatre/theatre_05.jpg', w: 2560, h: 1438 },
-                    { src: 'media/theatre/theatre_06.JPG', w: 2448, h: 3264 },
-                    { src: 'media/theatre/theatre_07.JPG', w: 868, h: 1156 },
-                    { src: 'media/theatre/theatre_08.jpg', w: 1280, h: 854 },
-                    { src: 'media/theatre/theatre_09.JPG', w: 2448, h: 3264 },
-                    { src: 'media/theatre/theatre_10.jpg', w: 824, h: 558 },
-                    { src: 'media/theatre/theatre_11.JPG', w: 2448, h: 3264 }
+                    { src: 'media/theatre/theatre_01.webp', w: 552, h: 429 },
+                    { src: 'media/theatre/theatre_02.webp', w: 868, h: 1156 },
+                    { src: 'media/theatre/theatre_03.webp', w: 2741, h: 1824 },
+                    { src: 'media/theatre/theatre_04.webp', w: 400, h: 265 },
+                    { src: 'media/theatre/theatre_05.webp', w: 2560, h: 1438 },
+                    { src: 'media/theatre/theatre_06.webp', w: 2448, h: 3264 },
+                    { src: 'media/theatre/theatre_07.webp', w: 868, h: 1156 },
+                    { src: 'media/theatre/theatre_08.webp', w: 1280, h: 854 },
+                    { src: 'media/theatre/theatre_09.webp', w: 2448, h: 3264 },
+                    { src: 'media/theatre/theatre_10.webp', w: 824, h: 558 },
+                    { src: 'media/theatre/theatre_11.webp', w: 2448, h: 3264 }
                 ]
             }
         };
 
-        // ---- BUILD CAROUSELS ----
-        function buildCarousel(trackId, images, altText) {
-            const track = document.getElementById(trackId);
+        // ---- BUILD CAROUSELS (lazy — only when tab is activated) ----
+        const carouselBuilt = {};
+
+        function buildCarousel(key) {
+            const data = carouselData[key];
+            if (!data) return;
+            const track = document.getElementById(key + 'Track');
             if (!track) return;
             track.innerHTML = '';
             const height = window.innerWidth <= 600 ? 120 : (window.innerWidth <= 900 ? 160 : 224);
-            images.forEach(img => {
+            data.images.forEach(img => {
                 const aspect = img.w / img.h;
                 let width = height * aspect;
                 const maxW = window.innerWidth <= 600 ? 300 : (window.innerWidth <= 900 ? 400 : 560);
@@ -1366,7 +1389,7 @@
 
                 const el = document.createElement('img');
                 el.src = img.src;
-                el.alt = altText;
+                el.alt = data.alt;
                 el.loading = 'lazy';
                 el.style.height = '100%';
                 el.style.width = '100%';
@@ -1376,20 +1399,67 @@
                 item.appendChild(el);
                 track.appendChild(item);
             });
+            carouselBuilt[key] = true;
         }
 
-        buildCarousel('academicTrack', carouselData.academic.images, 'Academic diploma, certificate, or award');
-        buildCarousel('choreographyTrack', carouselData.choreography.images, 'Choreographic rehearsal, dance performance, or studio archive photo');
-        buildCarousel('theatreTrack', carouselData.theatre.images, 'Stage production performance or theatrical backstage photo');
+        function ensureCarouselBuilt(key) {
+            if (!carouselBuilt[key]) buildCarousel(key);
+        }
 
+        // Archive Tabs
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const carousels = document.querySelectorAll('.carousel-container');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetKey = btn.getAttribute('data-target');
+                tabBtns.forEach(b => b.classList.remove('active'));
+                carousels.forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(targetKey).classList.add('active');
+                ensureCarouselBuilt(targetKey);
+            });
+        });
+
+        // Initial: build only academic (the initially visible tab)
+        ensureCarouselBuilt('academic');
+
+        // Rebuild only already-built carousels on resize
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
-                buildCarousel('academicTrack', carouselData.academic.images, 'Academic diploma, certificate, or award');
-                buildCarousel('choreographyTrack', carouselData.choreography.images, 'Choreographic rehearsal, dance performance, or studio archive photo');
-                buildCarousel('theatreTrack', carouselData.theatre.images, 'Stage production performance or theatrical backstage photo');
+                Object.keys(carouselBuilt).forEach(key => {
+                    if (carouselBuilt[key]) buildCarousel(key);
+                });
             }, 300);
+        });
+
+        // ---- LAZY VIDEO LOADING ----
+        // Videos load + autoplay only when they are within 1 viewport of the visible area.
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    if (!video.dataset.loaded) {
+                        video.dataset.loaded = 'true';
+                        video.preload = 'auto';
+                        video.load();
+                        const p = video.play();
+                        if (p && typeof p.catch === 'function') p.catch(() => {});
+                    }
+                    videoObserver.unobserve(video);
+                }
+            });
+        }, {
+            rootMargin: '100% 0px',
+            threshold: 0.01
+        });
+
+        document.querySelectorAll('video').forEach(video => {
+            video.removeAttribute('autoplay');
+            video.preload = 'none';
+            videoObserver.observe(video);
         });
 
         // ---- MODAL ----
