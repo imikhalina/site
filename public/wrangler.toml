@@ -2,5 +2,5 @@ name = "darina mikhalina portfolio"
 compatibility_date = "2026-04-24"
 
 [assets]
-directory = "./dist/"            # укажите вашу папку сборки
+directory = "./public/".          # укажите вашу папку сборки
 not_found_handling = "404-page"  # ключевая настройка
