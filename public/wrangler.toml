@@ -1,6 +1,0 @@
-name = "darina mikhalina portfolio"
-compatibility_date = "2026-04-24"
-
-[assets]
-directory = "./public/".          # укажите вашу папку сборки
-not_found_handling = "404-page"  # ключевая настройка
