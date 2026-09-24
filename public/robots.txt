@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mikhalinadarina.com/sitemap.xml
+Sitemap: https://mikhalinadarina.com/sitemap.xml
